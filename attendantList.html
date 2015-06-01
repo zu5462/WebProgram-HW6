@@ -15,7 +15,7 @@
       console.log('document ready');
       if(Parse.User.current()===null){
         alert("請先登入，將轉到登入頁面。");
-        window.location="login.html";
+        window.location="logIn.html";
       }else if(Parse.User.current().attributes.role==="student"){
         alert("此頁面只有老師身分才可進入。");
         window.location="index.html";
